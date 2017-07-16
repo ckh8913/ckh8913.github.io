@@ -9,14 +9,14 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
-ol,ul{list-style:none;}	
+ol,ul{list-style:none;}
 caption,th{text-align:left;}
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 q:before,q:after{content:'';}
 abbr,acronym{border:0;}
-object { outline:none; } 
+object { outline:none; }
 /*------------------------------------------
-  Base 
+  Base
 ------------------------------------------*/
 a{outline: none;text-decoration: none;}
 em{font-style: italic;}
@@ -33,7 +33,7 @@ strong{font-weight: bold;}
 .clear {
    clear:both;
    background:none !important;
-   width:0px !important;	
+   width:0px !important;
    height:0px !important;
 }
 .hidden {
@@ -47,7 +47,7 @@ strong{font-weight: bold;}
 	/* For IE 8 */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');	
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
 
@@ -75,8 +75,8 @@ body {
 	padding:0px;
 	margin:0px;
 }
-a { 
-	color:white; 
+a {
+	color:white;
 }
 .wrap{
 	position:absolute;
@@ -86,7 +86,7 @@ a {
 	width: 320px;
 	height: 650px;
 	text-align: left;
-} 
+}
 
 /*------------------------------------------
 	Content
@@ -142,7 +142,7 @@ a {
 #main .box.footer {
 	top:604px;
 	width:320px;
-	height:27px;
+	height:30px;
 }
 
 
@@ -153,7 +153,7 @@ a {
 	background:black;
 	width:160px;
 	height:151px;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
@@ -273,11 +273,11 @@ a {
 	height:100%;
 	z-index:2;
 	background:black;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
-	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);	
+	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 }
 
 
@@ -382,11 +382,11 @@ a {
 	height:100%;
 	z-index:2;
 	background:black;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
-	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);	
+	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 }
 
 
@@ -516,11 +516,11 @@ a {
 	height:100%;
 	z-index:2;
 	background:black;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
-	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);	
+	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 }
 
 
@@ -578,7 +578,7 @@ a {
 }
 #events .box.b5 {
 	top:285px;
-	height:240px; 
+	height:240px;
 }
 #events .box.b6 {
 	top:405px;
@@ -635,11 +635,11 @@ a {
 	height:100%;
 	z-index:2;
 	background:black;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
-	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);	
+	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 }
 
 
@@ -697,7 +697,7 @@ a {
 #other .box.b5 {
 	top:285px;
 	left:160px;
-	height:240px; 
+	height:240px;
 }
 #other .box.b6 {
 	top:525px;
@@ -749,24 +749,9 @@ a {
 	height:100%;
 	z-index:2;
 	background:black;
-	
+
 	-webkit-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-moz-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 	-o-transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
-	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);	
+	transition:all 800ms cubic-bezier(0.570, 0.100, 0.275, 0.890);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

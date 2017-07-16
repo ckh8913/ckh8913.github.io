@@ -1,0 +1,74 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>美尚居</title>
+  <meta name="keywords" content="美尚居空间规划" />
+  <meta name="description" content="美尚居空间规划" />
+  <meta id="viewport" name="viewport" content="width=320, minimum-scale=1.0, maximum-scale=10.0, user-scalable=1" />
+  <link rel="stylesheet" href="static/css/msj.css" />
+  <script src="static/js/jquery-1.9.1.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/image.js"></script>
+ </head>
+ <body>
+  <div id="winter" class="wrap" style="width: 400px;">
+   <div class="box menu" style="margin-bottom: 20px;">
+    <a href="index.html"><img src="static/img/back.png?v=e7f50b7339cbd4ea800b223df318f543" width="320" height="44" border="0" /></a>
+   </div>
+   <div id="con" style="display: block;margin-top: 40px;">
+   </div>
+  </div>
+  <script type="text/javascript">
+  function GetRequest() {
+      var url = location.search; //获取url中"?"符后的字串
+      var theRequest = new Object();
+      if (url.indexOf("?") != -1) {
+          var str = url.substr(1);
+          strs = str.split("&");
+          for (var i = 0; i < strs.length; i++) {
+              theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+          }
+      }
+      return theRequest;
+  }
+  var Request = new Object();
+  Request = GetRequest();
+  var to = Request['to']
+  var imgArr = imgdata[to];
+  var imgurl = 'http://ot4eg2j9d.bkt.clouddn.com/' + to + '/';
+  var obj = $("#con");
+  for (var i = 0; i < imgArr.length; i++) {
+      var div = $('<div class="box1" style="float: left; margin: 5px 5px 5px 5px;">')
+      var img = $('<img width="160" height="120" border="0">').attr('src', imgurl + imgArr[i] + '?imageView2/1/w/160/h/120/q/75%7Cimageslim')
+      var a = $('<a>').attr('href', 'detail.html?to=' + to + '&img=' + imgArr[i]).append(img);
+      a.appendTo(div)
+      obj.append(div)
+
+  }
+
+  $(document).ready(function() {
+      // tap back
+      $('.box.menu').click(function(e) {
+          e.preventDefault();
+          window.location = "/";
+      });
+      //FIX: zoom
+      if ((/android /gi).test(navigator.appVersion)) {
+          //alert('android');
+          scale = $(window).width() / 320;
+          $('#viewport').attr('content', 'width=320, initial-scale=' + scale + ', minimum-scale=1.0, maximum-scale=10.0, user-scalable=1')
+      }
+  });
+  $(window).load(function() {
+      $('.box').prepend('<div class="boxblenda"></div>');
+      $('.box').show();
+      //200ms
+      setTimeout(function() {
+          $('.box.menu .boxblenda').css("transform", "translateX(320px)");
+      },
+      200);
+
+  });
+</script>
+ </body>
+</html>
